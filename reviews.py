@@ -22,6 +22,6 @@ combined_df.columns = ['Country', 'Count', 'Points']
 combined_df = combined_df.sort_values(by='Count', ascending=False)
 
 
-combined_df.to_csv('reviews-per-country.csv')
+combined_df.to_csv('reviews-per-country.csv', index=False)
 
-#print(combined_df)
+print(combined_df)
