@@ -20,8 +20,8 @@ combined_df = pd.DataFrame({
 
 combined_df.columns = ['Country', 'Count', 'Points']
 combined_df = combined_df.sort_values(by='Count', ascending=False)
-#combined_df = combined_df.set_index('Country')
 
-combined_df.to_csv('country_summary.csv')
 
-print(combined_df)
+combined_df.to_csv('reviews-per-country.csv')
+
+#print(combined_df)
